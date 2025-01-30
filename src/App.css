@@ -245,17 +245,30 @@
 	height: auto !important;
 }
 
-
-.expander button {
-	background: var(--taskbar-background);
-	width: auto;
-	border-radius: 0 2em 2em 0;
-}
-
-.gutter {
-	height: auto !important;
-}
-
 iframe#webpack-dev-server-client-overlay {
 	display:none!important;
+}
+
+.submitted-text{
+	animation: bounce 1s forwards; 
+}
+
+@keyframes bounce {
+  0% {
+	opacity: 0;
+    transform: translateY(0); 
+  }
+  15% {
+	opacity: 1;
+    transform: translateY(-25%); 
+  }
+  30% {
+    transform: translateY(0); 
+  }
+  50% {
+	opacity: 1;
+  }
+  100% {
+	opacity: 0;
+  }
 }
