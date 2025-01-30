@@ -245,6 +245,17 @@
 	height: auto !important;
 }
 
+
+.expander button {
+	background: var(--taskbar-background);
+	width: auto;
+	border-radius: 0 2em 2em 0;
+}
+
+.gutter {
+	height: auto !important;
+}
+
 iframe#webpack-dev-server-client-overlay {
 	display:none!important;
 }
