@@ -85,6 +85,12 @@ class Audience extends React.Component {
 					</div>
 				);
 			} else {
+
+				let freeResponseBox = null;
+				if(this.props.performance.audience.startsWith('@')){
+					freeResponseBox = <><TextBox onSubmitted={this.handleFreeResponse}/></>
+				}
+
 				let rantContent = null;
 				if(this.props.settings.showRantContentToAudience){
 					let r = null;
@@ -99,7 +105,7 @@ class Audience extends React.Component {
 					<div>
 						<div className="bubble">
 							<p tabIndex="0" role="alert" >{newText.trim()}</p>
-							<TextBox onSubmitted={this.handleFreeResponse}/>
+							{freeResponseBox}
 						</div>
 						
 						{rantContent}

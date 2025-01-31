@@ -272,3 +272,21 @@ iframe#webpack-dev-server-client-overlay {
 	opacity: 0;
   }
 }
+
+
+.choice-list li{
+	display:flex;
+	gap:2rem;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.choice-list li span{
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.choice-list li button{
+	width: 13rem;
+	margin: 0;
+}
+
